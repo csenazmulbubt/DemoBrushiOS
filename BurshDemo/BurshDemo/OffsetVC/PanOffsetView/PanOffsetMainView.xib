@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PanOffsetMainView" customModule="BurshDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="bqK-f6-j65"/>
+                <outlet property="panTopOffsetView" destination="ibk-Tc-Fiq" id="idq-GM-Jow"/>
+                <outlet property="sizeSlider" destination="pqf-3Y-pZj" id="WTL-DN-VgW"/>
+                <outlet property="xCordSlider" destination="xKj-HQ-wKd" id="GQa-Tj-X9e"/>
+                <outlet property="yCordSlider" destination="ocu-n7-J5f" id="p8m-00-KeB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFU-C4-W5a">
+                    <rect key="frame" x="0.0" y="0.0" width="557" height="600"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-n7-J5f" userLabel="YHorizontal Slider">
+                            <rect key="frame" x="62" y="404" width="433" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="h6I-ar-qnz"/>
+                            </constraints>
+                        </slider>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-HQ-wKd" userLabel="XHorizontal Slider">
+                            <rect key="frame" x="62" y="464" width="433" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="uPF-dv-FNO"/>
+                            </constraints>
+                        </slider>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pqf-3Y-pZj" userLabel="SizeHorizontal Slider">
+                            <rect key="frame" x="62" y="516" width="433" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="7Bf-aF-E98"/>
+                            </constraints>
+                        </slider>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-Tc-Fiq" customClass="PanTopOffsetView" customModule="BurshDemo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="557" height="372"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-AS-oA2">
+                            <rect key="frame" x="0.0" y="0.0" width="557" height="404"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.raised.fingers.spread" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OUm-LK-pIm">
+                                    <rect key="frame" x="262.66666666666669" y="186" width="32" height="32"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="bCk-54-Gkm"/>
+                                        <constraint firstAttribute="width" secondItem="OUm-LK-pIm" secondAttribute="height" multiplier="1:1" id="vTc-m6-Ywu"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="OUm-LK-pIm" firstAttribute="centerY" secondItem="2ia-AS-oA2" secondAttribute="centerY" id="AT2-uq-f8O"/>
+                                <constraint firstItem="OUm-LK-pIm" firstAttribute="centerX" secondItem="2ia-AS-oA2" secondAttribute="centerX" id="DPI-Mh-KIH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ibk-Tc-Fiq" firstAttribute="leading" secondItem="pFU-C4-W5a" secondAttribute="leading" id="7GG-w4-CZq"/>
+                        <constraint firstItem="ocu-n7-J5f" firstAttribute="top" secondItem="2ia-AS-oA2" secondAttribute="bottom" id="7aE-52-sfs"/>
+                        <constraint firstAttribute="trailing" secondItem="xKj-HQ-wKd" secondAttribute="trailing" constant="64" id="H0m-2i-QMo"/>
+                        <constraint firstItem="2ia-AS-oA2" firstAttribute="top" secondItem="pFU-C4-W5a" secondAttribute="top" id="J7t-jB-sNV"/>
+                        <constraint firstAttribute="trailing" secondItem="pqf-3Y-pZj" secondAttribute="trailing" constant="64" id="JQz-3A-IxS"/>
+                        <constraint firstItem="2ia-AS-oA2" firstAttribute="leading" secondItem="pFU-C4-W5a" secondAttribute="leading" id="KZ2-dh-t56"/>
+                        <constraint firstItem="pqf-3Y-pZj" firstAttribute="top" secondItem="xKj-HQ-wKd" secondAttribute="bottom" constant="8" id="SHR-Qm-bjx"/>
+                        <constraint firstItem="xKj-HQ-wKd" firstAttribute="leading" secondItem="pFU-C4-W5a" secondAttribute="leading" constant="64" id="SLu-6X-YWz"/>
+                        <constraint firstAttribute="trailing" secondItem="2ia-AS-oA2" secondAttribute="trailing" id="TjJ-vt-99j"/>
+                        <constraint firstItem="ibk-Tc-Fiq" firstAttribute="top" secondItem="pFU-C4-W5a" secondAttribute="top" id="WCU-R3-WCP"/>
+                        <constraint firstItem="ocu-n7-J5f" firstAttribute="leading" secondItem="pFU-C4-W5a" secondAttribute="leading" constant="64" id="iiC-vg-JOd"/>
+                        <constraint firstAttribute="trailing" secondItem="ocu-n7-J5f" secondAttribute="trailing" constant="64" id="k3v-Zl-ZlK"/>
+                        <constraint firstItem="pqf-3Y-pZj" firstAttribute="leading" secondItem="pFU-C4-W5a" secondAttribute="leading" constant="64" id="kVZ-bq-wKl"/>
+                        <constraint firstAttribute="trailing" secondItem="ibk-Tc-Fiq" secondAttribute="trailing" id="mnu-aK-ZXK"/>
+                        <constraint firstAttribute="bottom" secondItem="pqf-3Y-pZj" secondAttribute="bottom" constant="40" id="nKd-yj-6ha"/>
+                        <constraint firstItem="ocu-n7-J5f" firstAttribute="top" secondItem="ibk-Tc-Fiq" secondAttribute="bottom" constant="32" id="qBB-LY-RO5"/>
+                        <constraint firstItem="xKj-HQ-wKd" firstAttribute="top" secondItem="ocu-n7-J5f" secondAttribute="bottom" constant="16" id="tTf-mI-3a5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pFU-C4-W5a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GYG-kx-E88"/>
+                <constraint firstAttribute="bottom" secondItem="pFU-C4-W5a" secondAttribute="bottom" id="XGa-UT-vQ2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pFU-C4-W5a" secondAttribute="trailing" id="XmN-dp-cni"/>
+                <constraint firstItem="pFU-C4-W5a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="m0O-QQ-Rti"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="159.23076923076923" y="-66.113744075829388"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hand.raised.fingers.spread" catalog="system" width="128" height="128"/>
+    </resources>
+</document>

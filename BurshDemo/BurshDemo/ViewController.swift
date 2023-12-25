@@ -11,9 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Do any additional setup after loading the view.
+        //Change Something
     }
-
+    
+    @IBAction func tappedOnDoneButton(_ sender: UIButton) {
+        let panOffsetVC = PanOffsetVC()
+        panOffsetVC.modalPresentationStyle = .fullScreen
+        self.present(panOffsetVC, animated: true, completion: nil)
+    }
+    
 
 }
 
